@@ -83,10 +83,14 @@ function askSaveIfNeed(){
       type: 'question',
       buttons: [ 'Yes', 'No' ]
     }).then((response)=>{
-      if(response.response==0) saveCurrentDoc().then(()=>{
+      if(response.response==0) //点击Yes按钮后保存当前文档
+      {
+        saveCurrentDoc().then(()=>{
+          resolve();
+        });
+      } else {
         resolve();
-      }); //点击Yes按钮后保存当前文档
-      return;
+      }
     });
   });
 }
