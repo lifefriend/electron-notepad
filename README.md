@@ -6,7 +6,7 @@ electron-packager <应用目录> < 应用名称> --platform=<打包平台> --out
 - mac 打包：平台 --paltform=drawin ｜ 架构 --arch=x64 ｜ 图标 --icon=\*\*.ico
 
 ```shell
-electron-packager ./ app --platform=win32 --out=./dist --arch=x64 --app-version=1.0.0 --icon=./public/ico.ico --overwite
+electron-packager ./ app --platform=win32 --out=./dist --arch=x64 --app-version=1.0.0 --icon=./public/ico.ico --overwite --asar --app-version=0.0.1
 ```
 
 ## 2、打包为安装包
